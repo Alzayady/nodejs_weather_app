@@ -1,0 +1,114 @@
+
+body, html {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  
+  #all { 
+      padding: 0;
+    margin: 0;
+
+    /* The image used */
+    background-image:url( 'https://images.unsplash.com/photo-1531315630201-bb15abeb1653?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80');
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #contHome{
+      padding: 120px;
+      text-align: center;
+
+  }
+  h1{
+      font-size: 7em;
+      margin-bottom: 10px;
+  }
+  #contHome h3{
+      font-size: 3em;
+      color: sandybrown;
+  }
+  .input{
+      border: 2px solid black;
+      width: 350px;
+      height: 35px;
+      background-color: darkgrey;
+      border-radius: 5px;
+      padding: 5px; 
+      display: block;
+      margin: 20px auto;
+  }
+  .button{
+      border-radius: 5px;
+      width: 350px;
+      height: 30px;
+      background-color: greenyellow;
+      padding: 0;
+      border: 2px solid white;
+  }
+  #error{
+      font-size: 8em;
+      color: red;
+      text-align: center;
+
+  }
+  .error{
+      width: auto;
+      text-align: center;
+      font-size: 5em;
+      color: brown
+  }
+  a{
+      text-decoration: none;
+      text-align: center;
+      color: darkgray;
+      margin:  0 auto;
+      display: block;
+      font-size: 3em;
+  }
+  a:hover{
+      color: black
+  }
+  .form-inline .form-control {
+    width: 400px;
+}
+
+.in{
+    margin-top: 70px; 
+    font-size: 40px;
+}
+.ts{
+   color: gray;
+}
+.inner{
+    float: left;
+    display: inline;
+    text-align: center;
+}
+.inS{
+    margin-left: 20px;
+}
+.Die{
+    background: lightgray;
+   
+    
+}
+.container {
+    
+     padding-right: 0px; 
+     padding-left: 0px; 
+   
+}
+.win{
+    text-align: center;
+    font-size: 30px;
+}
+.gray{
+    color: gray;
+}

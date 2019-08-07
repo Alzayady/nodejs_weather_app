@@ -1,0 +1,30 @@
+{{>header}}
+
+  <div class=" in row">
+     <div class="inner col-sm-12 col-md-12 col-lg-6">
+        <p class="tit"> <span class="ts">latitude:    </span> <span class="inS lat">{{lat}}  </span> </p>
+     </div>
+     <div class='inner col-sm-12 col-md-12 col-lg-6'>
+      <p class="tit">  <span class="ts" > longitude:   </span>  <span class="inS long">{{long}} </span> </p>
+     </div>
+     <div class="container">
+              <div style="width: 100%; height: 480px" id="mapContainer"></div>
+     </div>
+
+  </div>
+  <div class="container Die">
+      <p> Time zone : <span class="inS">{{timezone}}</span></p>
+      <div class="container">
+        
+        
+      </div>
+  </div>
+  <div class="win container">
+    <p> <span class="gray "> Temperature :</span> <span class="inS"> {{temperature}}  <sup>O</sup>C</span> </p>
+    <p> <span class="gray "> pressure :</span> <span class="inS"> {{pressure}}  </span> </p>
+    <p> <span class="gray "> Day Summry :</span> <span class="inS"> {{ DaySummry}}  </span> </p>
+    <p> <span class="gray "> week Summry :</span> <span class="inS"> {{weekSummry}}  </span> </p>
+  </div>
+
+{{>footerIndex}}
+
