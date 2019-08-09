@@ -4,7 +4,7 @@
   "description": "weathr app gives you the forcast now and in future ",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
   "author": "Ahmed Alzayady",
   "license": "ISC",
