@@ -21,6 +21,7 @@ Handlebars.registerHelper("printItems", function(items) {
 });
 
 app.get('/',(req,res)=>{
+     res.send("sf");
      res.render("home");
     // document.querySelector('.a').textContent="success";
 })
