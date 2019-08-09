@@ -46,19 +46,21 @@ app.get('/weather',(req,res)=>{
        });
      }
      const timezone=ress.timezone;
-     const temperature=ress.currently.apparentTemperature;
+     const temperature=ress.currently.temperature;
+     const apparentTemperature=ress.currently.apparentTemperature;
      const pressure=ress.currently.pressure;
      const DaySummry=ress.hourly.summary;
      const weekSummry=ress.daily.summary;
      const temperatureHigh=ress.daily.data[0].temperatureHigh;
      const temperatureLow=ress.daily.data[0].temperatureLow;
-     
+    // return res.send(ress);
       res.render('index',{
       lat:geo.lat,
       long:geo.long,
       timezone,
       
       temperature,
+      apparentTemperature,
       pressure,
       DaySummry,
       weekSummry,
