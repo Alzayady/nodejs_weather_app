@@ -21,9 +21,7 @@ Handlebars.registerHelper("printItems", function(items) {
 });
 
 app.get('/',( req ,res)=>{
-    // res.send("sf");
      res.render("home");
-    // document.querySelector('.a').textContent="success";
 })
  
 
@@ -54,10 +52,6 @@ app.get('/weather',(req,res)=>{
      const weekSummry=ress.daily.summary;
      const temperatureHigh=ress.daily.data[0].temperatureHigh;
      const temperatureLow=ress.daily.data[0].temperatureLow;
-     console.log(timezone);
-     console.log(temperature);
-  
-    //return res.send(ress);
      
       res.render('index',{
       lat:geo.lat,
@@ -79,7 +73,6 @@ app.get('/weather',(req,res)=>{
 
 app.post("/weather",(req,res)=>{
         const data=req.body.address;
-        console.log(data);
         if(data==undefined){
           res.redirect('/');
         }

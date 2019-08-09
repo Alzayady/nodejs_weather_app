@@ -112,3 +112,11 @@ body, html {
 .gray{
     color: gray;
 }
+.bt{
+    text-align: right;
+}
+.pm{
+   
+    margin: 0;
+   
+}
