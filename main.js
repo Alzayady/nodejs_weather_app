@@ -20,9 +20,9 @@ Handlebars.registerHelper("printItems", function(items) {
   console.log(items);
 });
 
-app.get('/',(req,res)=>{
+app.get('/',( req ,res)=>{
      res.send("sf");
-     res.render("home");
+    // res.render("home");
     // document.querySelector('.a').textContent="success";
 })
  
