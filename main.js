@@ -52,6 +52,8 @@ app.get('/weather',(req,res)=>{
      const pressure=ress.currently.pressure;
      const DaySummry=ress.hourly.summary;
      const weekSummry=ress.daily.summary;
+     const temperatureHigh=ress.daily.data[0].temperatureHigh;
+     const temperatureLow=ress.daily.data[0].temperatureLow;
      console.log(timezone);
      console.log(temperature);
   
@@ -65,7 +67,9 @@ app.get('/weather',(req,res)=>{
       temperature,
       pressure,
       DaySummry,
-      weekSummry
+      weekSummry,
+      temperatureHigh,
+      temperatureLow
      });
 
      }) 
