@@ -9,7 +9,7 @@ app.use(bodyparsel.urlencoded({extended:true}));
 
 const Handlebars=require('handlebars');
 
-const port=process.env.port ||3000;
+const port=process.env.PORT ||3000;
 
 //req.body.name;
 app.set('view engine','hbs');
