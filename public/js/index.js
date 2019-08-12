@@ -6,17 +6,21 @@ const min=document.querySelector('.min');
 plus.addEventListener('click',()=>{
         var child = document.getElementById('mapContainer').lastElementChild;
     document.getElementById('mapContainer').removeChild(child);
+    if(zoom<20){
+
+    
         zoom++;
-        console.log(zoom);
         map(zoom);
+    }
 })
 min.addEventListener('click',()=>{
         var child = document.getElementById('mapContainer').lastElementChild;
     document.getElementById('mapContainer').removeChild(child);
+    if(zoom>0){
         zoom--;
-        console.log(zoom);
-
         map(zoom);
+    }
+    
 })
 var platform = new H.service.Platform({
     'apikey': 'j7938oxIpzgYUY4wRYARUVuKOd7fzUt3HqeU5I802ns'
