@@ -4,23 +4,23 @@ var zoom=10;
 const plus=document.querySelector('.plus');
 const min=document.querySelector('.min');
 plus.addEventListener('click',()=>{
+        
+    if(zoom<18){
         var child = document.getElementById('mapContainer').lastElementChild;
-    document.getElementById('mapContainer').removeChild(child);
-    if(zoom<20){
-
-    
+        document.getElementById('mapContainer').removeChild(child);
         zoom++;
         map(zoom);
     }
 })
 min.addEventListener('click',()=>{
+        
+    if(zoom>2){
         var child = document.getElementById('mapContainer').lastElementChild;
-    document.getElementById('mapContainer').removeChild(child);
-    if(zoom>0){
+        document.getElementById('mapContainer').removeChild(child);
         zoom--;
         map(zoom);
     }
-    
+
 })
 var platform = new H.service.Platform({
     'apikey': 'j7938oxIpzgYUY4wRYARUVuKOd7fzUt3HqeU5I802ns'
